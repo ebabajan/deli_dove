@@ -1,0 +1,13 @@
+export  'package:flutter/material.dart';
+export 'package:deli_dove/view/auth/startup/splash_screen.dart';
+export '../../utils/color/color.dart';
+export 'package:deli_dove/view/auth/startup/getstarted_screen.dart';
+export '../../utils/widgets/elevatedbutton.dart';
+export 'package:deli_dove/view/auth/login%20signup/login_screen.dart';
+export 'package:deli_dove/utils/widgets/TextFormFieldWidget.dart';
+export '../../utils/widgets/PwdTextFormFieldWidget.dart';
+export 'package:deli_dove/view/auth/login%20signup/signup_screen.dart';
+export 'package:deli_dove/view/menu/home/homescreen.dart';
+export '../../utils/widgets/SearchBarTextField.dart';
+export 'package:deli_dove/view/auth/startup/terms_screen.dart';
+export 'package:get/get.dart';
