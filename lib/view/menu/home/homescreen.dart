@@ -1,4 +1,6 @@
 
+import 'package:deli_dove/models/category.dart';
+import 'package:deli_dove/utils/widgets/widget_home_categories.dart';
 import 'package:deli_dove/view/menu/cart/cart_screen.dart';
 import 'package:deli_dove/view/menu/home/productreview_screen.dart';
 import 'package:deli_dove/view/menu/home/subcategory_screen.dart';
@@ -33,25 +35,19 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
-
+  List <ProductCategory> cat = [];
   
   void _bypassSslVerificationForHttpClient() {
     HttpOverrides.global = _MyHttpOverrides();
   }
 
-  void getCategories() async {
-    final productCategories = APIService().fetchProductCategories();
-    print(productCategories); 
-  //   for (final category in productCategories) {
-  //   print(category.categoryName);
-    
+  void getCategories(){
+    final productCategories = APIService();
+    final category = productCategories.fetchProductCategories();
+    print('........');
+    print(category);
    
-  // }    
-
-    
   }
-  
-  
   
   List icon = [Icons.shopping_cart_outlined,Icons.fire_truck_outlined,Icons.fastfood_outlined,Icons.medical_services_outlined];
   List title = ["Order Grocery","Order Flowers","Order Recipe","Order Medicine"];
@@ -317,66 +313,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(height: 10,),
-                Container(
-                  height: 130,
-                  child: ListView.builder(
-                      itemCount: categoriesimg.length,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context,inde){
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: GestureDetector(
-                            onTap: (){
-                              if (inde==0){
-                                Get.to(SubCategoryScreen(
-                                  img: vegetables,
-                                  name: vegetablesnames,
-                                ));
-                              }
-                              else if (inde==1){
-                             Get.to(SubCategoryScreen(
-                               img: fruits,
-                               name: fruitsname,
-                             ));
-                           }
-                              else if (inde==2){
-                                Get.to(SubCategoryScreen(
-                                  img: medicine,
-                                  name: medicinename,
-                                ));
-                              }
-                              else if (inde==3){
-                                Get.to(SubCategoryScreen(
-                                  img: drinks,
-                                  name: drinksname,
-                                ));
-                              } else if (inde==4){
-                                Get.to(SubCategoryScreen(
-                                  img: snacks,
-                                   name: snacksname,
-                                ));
-                              }
-
-                            },
-                            child: Column(
-                              children: [
-                                CircleAvatar(
-                                  backgroundImage: NetworkImage(categoriesimg[inde]),
-                                  backgroundColor: Colors.grey.shade200,
-                                  radius: 38,
-                                ),
-                                SizedBox(height: 10,),
-                                Text(categories[inde],style: TextStyle(fontSize: 12),),
-                              ],
-                            ),
-                          ),
-                        );
-                      }),
-                ),
+                Row(children: [
+                  Expanded(
+                    child: Container(
+                      height: 180,
+                      color: Colors.white24,
+                      child: ListView(
+                        children: [
+                          WidgetCategories(),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],),
+               
                 SizedBox(height: 10,),
+                
                 Row(
                   children: [
-                    Text('  Fruits    ',style: TextStyle(color: Colors.grey),),
+                    Text('  Fruits',style: TextStyle(color: Colors.grey),),
                     Expanded(
                       child: Divider(
                         color: Colors.grey.shade300,

@@ -4,8 +4,11 @@ import 'package:deli_dove/config.dart';
 import 'package:deli_dove/models/category.dart';
 import 'package:dio/dio.dart';
 import 'dart:io';
+import 'package:http/http.dart' as http;
 
 import 'package:flutter/foundation.dart';
+
+
 
 class _MyHttpOverrides extends HttpOverrides {
   @override
@@ -50,17 +53,19 @@ class APIService {
     }
   }
 
-  Future<List<ProductCategory>> fetchProductCategories() async {
+Future<List<ProductCategory>> 
+   fetchProductCategories() async {
     final url = Config.url + Config.productCat;
     final credential = Config.token;
 
     var header = {'Authorization': 'Basic $credential'};
     var dio = Dio();
+    
     List<ProductCategory> productCategories = [];
     _bypassSslVerificationForHttpClient();
 
     try {
-      var response = await dio.request(
+      final response = await dio.request(
         url,
         options: Options(
           method: 'GET',
@@ -69,30 +74,25 @@ class APIService {
       );
 
       if (response.statusCode == 200) {
-        
-      
-        // print(response.statusCode);
-        // final jsonData = jsonDecode(response.data);
+        // Decode the response data as a List
+        final List<dynamic> data = response.data;
 
-        // for (var categoryData in jsonData) {
-        //   final category = ProductCategory.fromJson(categoryData);
-
-        //   productCategories.add(category);
-        // }
-        //print(response.data);
-        
-
-        productCategories = (response.data as List)
-            .map((i) => ProductCategory.fromJson(i))
-            .toList();
-       print(productCategories);    
-        return productCategories;    
-         
-      } 
-
-    } on DioException catch (e) {
-      print(e.response);
+        // Assuming ProductCategory.fromJson method is defined
+        productCategories = data.map((category) => ProductCategory.fromJson(category)).toList();
+       
+          // Print the decoded data
+        // productCategories.forEach((category) {
+        //   print('Category ID: ${category.id}, Name: ${category.name}');
+        //   if (category.image != null) {
+        //     print('Image Src: ${category.image!.src}');
+        //   }
+        // });
+       
+        return productCategories;
+      }
+    } catch (error) {
+      print('Error fetching product categories: $error');
     }
-     throw Exception('Failed to fetch product categories');
-  }
+    throw Exception("Something went wrong");
+  } 
 }
