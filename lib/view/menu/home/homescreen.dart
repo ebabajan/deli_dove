@@ -1,10 +1,10 @@
 
-import 'package:deli_dove/models/category.dart';
 import 'package:deli_dove/utils/widgets/widget_home_categories.dart';
 import 'package:deli_dove/view/menu/cart/cart_screen.dart';
 import 'package:deli_dove/view/menu/home/productreview_screen.dart';
 import 'package:deli_dove/view/menu/home/subcategory_screen.dart';
 import 'package:deli_dove/view/menu/home/subproduct_screen.dart';
+
 import '../../../utils/allimports/allimports.dart';
 import '../drawer/Terms/termsconditions_screen.dart';
 import '../drawer/contactus/contactus_screen.dart';
@@ -16,7 +16,6 @@ import 'package:http/http.dart' as http;
 import 'package:dio/dio.dart';
 import 'package:deli_dove/config.dart';
 import 'dart:io';
-import 'package:deli_dove/service/api_service.dart';
 
 class _MyHttpOverrides extends HttpOverrides {
   @override
@@ -34,20 +33,33 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+ 
 
-  List <ProductCategory> cat = [];
-  
   void _bypassSslVerificationForHttpClient() {
     HttpOverrides.global = _MyHttpOverrides();
   }
 
-  void getCategories(){
-    final productCategories = APIService();
-    final category = productCategories.fetchProductCategories();
-    print('........');
-    print(category);
-   
+  void getCategories() async {
+    final url = Config.url + Config.productCat;
+    final credential = Config.token;
+
+    _bypassSslVerificationForHttpClient();
+
+    var header = {'Authorization': 'Basic $credential'};
+
+    var dio = Dio();
+    var response = await dio.request(
+      url,
+      options: Options(
+        method: 'GET',
+        headers: header,
+      ),
+    );
+    print(response);
+    
   }
+  
+ 
   
   List icon = [Icons.shopping_cart_outlined,Icons.fire_truck_outlined,Icons.fastfood_outlined,Icons.medical_services_outlined];
   List title = ["Order Grocery","Order Flowers","Order Recipe","Order Medicine"];
@@ -313,25 +325,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(height: 10,),
-                Row(children: [
-                  Expanded(
-                    child: Container(
-                      height: 180,
-                      color: Colors.white24,
-                      child: ListView(
-                        children: [
-                          WidgetCategories(),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],),
-               
+                WidgetCategories(),
                 SizedBox(height: 10,),
-                
                 Row(
                   children: [
-                    Text('  Fruits',style: TextStyle(color: Colors.grey),),
+                    Text('  Fruits    ',style: TextStyle(color: Colors.grey),),
                     Expanded(
                       child: Divider(
                         color: Colors.grey.shade300,

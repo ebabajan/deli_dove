@@ -35,6 +35,7 @@ class APIService {
 
     var headers = {
       'Authorization': 'Basic $token',
+      HttpHeaders.contentTypeHeader:"application/json"
     };
 
     var response = await dio.request(
@@ -79,16 +80,8 @@ Future<List<ProductCategory>>
 
         // Assuming ProductCategory.fromJson method is defined
         productCategories = data.map((category) => ProductCategory.fromJson(category)).toList();
-       
-          // Print the decoded data
-        // productCategories.forEach((category) {
-        //   print('Category ID: ${category.id}, Name: ${category.name}');
-        //   if (category.image != null) {
-        //     print('Image Src: ${category.image!.src}');
-        //   }
-        // });
-       
-        return productCategories;
+        return productCategories.where((category) => category.image != null).toList();
+      
       }
     } catch (error) {
       print('Error fetching product categories: $error');

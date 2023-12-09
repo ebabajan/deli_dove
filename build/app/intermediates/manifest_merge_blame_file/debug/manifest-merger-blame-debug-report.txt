@@ -1,0 +1,275 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.deli_dove"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/ehsanullahbabajan/Sites/delidove-dart/android/app/src/main/AndroidManifest.xml:3:5-67
+15-->/Users/ehsanullahbabajan/Sites/delidove-dart/android/app/src/main/AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
+16-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-74
+17    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+17-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-89
+17-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-86
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+18-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+19    <uses-permission android:name="android.permission.VIBRATE" /> <!-- for android -->
+19-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
+19-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-63
+20    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+21    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+22    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+23    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+24    <!-- for Samsung -->
+25    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+26    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+27    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+28    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+29    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+30    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+31    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+32    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+33    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+34    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+35    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+36    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+37    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+38    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+39    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+40    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/b0389fa7cbcb973eb70356eb385c55ee/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+41
+42    <application
+43        android:name="android.app.Application"
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.8.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/2fa18b2f544a798470f6ba6d29f55f60/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+47        android:label="DeliDove" >
+48        <activity
+49            android:name="com.example.deli_dove.MainActivity"
+50            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51            android:exported="true"
+52            android:hardwareAccelerated="true"
+53            android:launchMode="singleTop"
+54            android:theme="@style/LaunchTheme"
+55            android:windowSoftInputMode="adjustResize" >
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+64                android:name="io.flutter.embedding.android.NormalTheme"
+65                android:resource="@style/NormalTheme" />
+66
+67            <intent-filter>
+68                <action android:name="android.intent.action.MAIN" />
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+78            android:name="flutterEmbedding"
+79            android:value="2" />
+80
+81        <receiver
+81-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-17:39
+82            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+82-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-89
+83            android:exported="true" />
+83-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-36
+84        <receiver
+84-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-20:39
+85            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+85-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-92
+86            android:exported="true" />
+86-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-36
+87        <receiver
+87-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-23:39
+88            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+88-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-92
+89            android:exported="true" />
+89-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+90        <receiver
+90-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-38:20
+91            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+91-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-87
+92            android:enabled="true"
+92-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-35
+93            android:exported="true" >
+93-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+94            <intent-filter>
+94-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37:29
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+95-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+96
+97                <action android:name="android.intent.action.BOOT_COMPLETED" />
+97-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-79
+97-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-76
+98                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+98-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-86
+98-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-83
+99                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+99-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-84
+99-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-81
+100                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+100-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:17-82
+100-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:25-79
+101                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+101-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-82
+101-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:25-79
+102                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+102-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-107
+102-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:25-104
+103            </intent-filter>
+104        </receiver>
+105
+106        <service
+106-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:72
+107            android:name="me.carda.awesome_notifications.DartBackgroundService"
+107-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-80
+108            android:exported="false"
+108-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-37
+109            android:permission="android.permission.BIND_JOB_SERVICE" />
+109-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-69
+110        <service
+110-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:44:9-49:43
+111            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+111-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-90
+112            android:enabled="true"
+112-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-35
+113            android:exported="false"
+113-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-37
+114            android:foregroundServiceType="phoneCall"
+114-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:48:13-54
+115            android:stopWithTask="true" />
+115-->[:awesome_notifications] /Users/ehsanullahbabajan/Sites/delidove-dart/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:49:13-40
+116
+117        <activity
+117-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:23:9-27:75
+118            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+118-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:24:13-93
+119            android:excludeFromRecents="true"
+119-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:25:13-46
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:26:13-37
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:27:13-72
+122        <!--
+123            Service handling Google Sign-In user revocation. For apps that do not integrate with
+124            Google Sign-In, this service will never be started.
+125        -->
+126        <service
+126-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:33:9-37:51
+127            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+127-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:34:13-89
+128            android:exported="true"
+128-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:35:13-36
+129            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+129-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:36:13-107
+130            android:visibleToInstantApps="true" />
+130-->[com.google.android.gms:play-services-auth:20.4.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/9fbd8b6fada67877222f712826ad1a35/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:37:13-48
+131
+132        <activity
+132-->[com.google.android.gms:play-services-base:18.0.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/aba8f806953ea3dd8f794da3aeb78a12/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+133            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+133-->[com.google.android.gms:play-services-base:18.0.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/aba8f806953ea3dd8f794da3aeb78a12/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-base:18.0.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/aba8f806953ea3dd8f794da3aeb78a12/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-base:18.0.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/aba8f806953ea3dd8f794da3aeb78a12/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+136
+137        <meta-data
+137-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+138            android:name="com.google.android.gms.version"
+138-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+139            android:value="@integer/google_play_services_version" />
+139-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+140
+141        <uses-library
+141-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+142            android:name="androidx.window.extensions"
+142-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+144        <uses-library
+144-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+145            android:name="androidx.window.sidecar"
+145-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+146            android:required="false" />
+146-->[androidx.window:window:1.0.0-beta04] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+147
+148        <provider
+148-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+149            android:name="androidx.startup.InitializationProvider"
+149-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+150            android:authorities="com.example.deli_dove.androidx-startup"
+150-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+151            android:exported="false" >
+151-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+152            <meta-data
+152-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+153                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+153-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+154                android:value="androidx.startup" />
+154-->[androidx.emoji2:emoji2:1.2.0] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+155            <meta-data
+155-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/8a80d508033fedd67158c92cfcf77311/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+156                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+156-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/8a80d508033fedd67158c92cfcf77311/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+157                android:value="androidx.startup" />
+157-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/ehsanullahbabajan/.gradle/caches/transforms-3/8a80d508033fedd67158c92cfcf77311/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+158        </provider>
+159    </application>
+160
+161</manifest>
