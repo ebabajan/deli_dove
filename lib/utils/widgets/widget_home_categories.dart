@@ -24,6 +24,8 @@ class _widgetCategoriesState extends State<WidgetCategories> {
   }
 
   Widget _categoriesList() {
+    //apiService!.fetchProducts();
+    apiService!.Login();
     return FutureBuilder<List<ProductCategory>>(
       future: apiService!.fetchProductCategories(),
       builder: (BuildContext context,
@@ -83,7 +85,6 @@ class _widgetCategoriesState extends State<WidgetCategories> {
           itemCount: categories.length,
           itemBuilder: (context, index) {
             var data = categories[index];
-            print(data.name);
             return Column(
               children: [
                 Container(

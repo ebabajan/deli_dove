@@ -5,6 +5,8 @@ class Config {
    static String url =  'https://delidove.com/wp-json/wc/v3/';
    static String productCat = 'products/categories';
    static String customer = 'customers';
+   static String products = 'products';
+   static String tokenUrl ="https://delidove.com/WP-JSON/JWT-AUTH/V1/TOKEN";
 
    static String token =  base64.encode(utf8.encode(consumerKey+':'+consumerSecret));
   
